@@ -1,0 +1,59 @@
+#Creación menu
+
+menu = True
+
+while menu:
+print("=================================")
+print("1. Cargar Cartas")
+print("2. Cargar cartas Enemigo")
+print("3. Cargar mazo aleatorio")
+print("4. Crear mazo aleatorio")
+print("5. Crear mazo ofensivo")
+print("6. Crear mazo equilibrado")
+print("7. Crear mazo aleatorio Enemigo")
+print("8. Crear mazo ofensivo Enemigo")
+print("9. Cargar mazo defensivo Enemigo")
+print("10. Crear mazo equilibrado Enemigo")
+print("11. Luchar Jugador vs Jugador")
+print("12. Luchar Jugador vs Bot (arcade)")
+print("13. Luchar Jugador vs Bot (liga)")
+print("=================================")
+
+if menu == "Cargar Cartas":
+    print("Cargando Cartas.....")
+elif menu == "Cargar cartas Enemigo":
+    print("Generando cartas Enemigo....")
+elif menu == "Cargar mazo aleatorio":
+    print("Cargando un mazo aleatorio.....")
+elif menu == "Crear mazo ofensivo":
+    print("Creando mazo aleatorio......")
+elif menu == "Crear mazo equilibrado":
+    print("Creando mazo equilibrado......")
+elif menu == "Crear mazo aleatorio Enemigo":
+    print("Creando mazo aleatorio Enemigo")
+elif menu == "Crear mazo ofensivo Enemigo":
+    print("Creando mazo ofensivo Enemigo......")
+elif menu == "Crear mazo equilibrado Enemigo":
+    print("Creando mazo equilibrado Enemigo.......")
+elif menu == "Luchar Jugador vs Jugador":
+    print("Encontrando partida....... Partida Encontrada")
+elif menu == "Luchar Jugador vs Bot (arcade)":
+    print("Luchando Jugador vs Bot...... Partida Encontrada")
+elif menu == "Luchar Jugador vs Bot (liga)":
+    print("Luchando Jugador vs Bot......Partida Encontrada")
+
+menu_seleccion = {}
+menu_seleccion["1"] = "Cargar Cartas"
+menu_seleccion["2"] = ""
+
+while True:
+    opciones = menu_seleccion.keys()
+    for seleccion in opciones:
+        print(seleccion, menu_seleccion[seleccion])
+
+    seleccion=input("Por favor seleccione: ")
+
+    if seleccion == "1":
+        print("Cargando Cartas.....")
+    elif seleccion == "2":
+        print("")
