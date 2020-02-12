@@ -84,4 +84,22 @@ while True:
     elif seleccion == "3":
         print("Cargando un mazo aleatorio.....")
     elif seleccion == "4":
-        print("")
+        print("Creando mazo ofensivo......")
+    elif seleccion == "5":
+        print("Creando mazo ofensivo......")
+    elif seleccion == "6":
+        print("Creando mazo ofensivo......")
+    elif seleccion == "7":
+        print("Creando mazo aleatorio Enemigo")
+    elif seleccion == "8":
+        print("Creando mazo ofensivo......")
+    elif seleccion == "9":
+        print("Creando mazo ofensivo Enemigo......")
+    elif seleccion == "10":
+        print("Creando mazo equilibrado Enemigo.......")
+    elif seleccion == "11":
+        print("Encontrando partida....... Partida Encontrada")
+    elif seleccion == "12":
+        print("Luchando Jugador vs Bot...... Partida Encontrada")
+    elif seleccion == "13":
+        print("Luchando Jugador vs Bot......Partida Encontrada")
