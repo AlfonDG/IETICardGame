@@ -1,13 +1,11 @@
-from xml.dom import minidom
+import xml.etree.cElementTree as tree
 
-from Menu import menu
-
-barajaEnemigo = minidom.parse("../FicherosXML/IETI_Card_Game.xml")
+barajaEnemigo = tree.parse("../FicherosXML/IETI_Card_Game.xml")
 print(barajaEnemigo)
-CargarCartaEnemigo = barajaEnemigo.getElementsByTagName("PlayerConfig")[0]
-print(CargarCartaEnemigo.firstChild.data)
+CargarCartaRaizEnemigo = barajaEnemigo.getroot()
+print(CargarCartaRaizEnemigo)
 
-mybaraja = minidom.parse("../FicherosXML/IETI_Card_Game.xml")
-print(mybaraja)
-CargarMisCartas = mybaraja.getElementsByTagName("PlayerConfig")[0]
-print(CargarMisCartas.firstChild.data)
+myBaraja = tree.parse("../FicherosXML/IETI_Card_Game.xml")
+print()
+CargarCartaRaiz = myBaraja.getroot()
+print(CargarCartaRaiz)
