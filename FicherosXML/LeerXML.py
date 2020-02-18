@@ -1,11 +1,11 @@
-import xml.etree.cElementTree as tree
+import xml.etree.ElementTree as arbol
 
-barajaEnemigo = tree.parse("../FicherosXML/IETI_Card_Game.xml")
+barajaEnemigo = arbol.parse("../FicherosXML/IETI_Card_Game.xml")
 print(barajaEnemigo)
 CargarCartaRaizEnemigo = barajaEnemigo.getroot()
 print(CargarCartaRaizEnemigo)
 
-myBaraja = tree.parse("../FicherosXML/IETI_Card_Game.xml")
-print()
+myBaraja = arbol.parse("../FicherosXML/IETI_Card_Game.xml")
+print(myBaraja)
 CargarCartaRaiz = myBaraja.getroot()
 print(CargarCartaRaiz)
