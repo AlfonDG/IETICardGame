@@ -55,6 +55,7 @@ elif menu == "Luchar Jugador vs Bot (arcade)":
 elif menu == "Luchar Jugador vs Bot (liga)":
     print("Luchando Jugador vs Bot......Partida Encontrada")
 
+
 menu_seleccion = {}
 menu_seleccion["1"] = "Cargar Cartas"
 menu_seleccion["2"] = "Cargar cartas Enemigo"
