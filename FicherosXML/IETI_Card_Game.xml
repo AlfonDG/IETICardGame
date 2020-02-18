@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE Spotify SYSTEM "Spotify_canciones.dtd" [
+<?xml version="1.0" encoding="UTF-8"? standalone="yes">
+<!DOCTYPE PlayerConfig SYSTEM "IETI_Card_Game.dtd" [
 <!ELEMENT PlayerConfig (playerLife, summonPointsPlayer, deck) >
 <!ELEMENT summonPointsPlayer (#PCDATA)>
 <!ELEMENT playerLife (#PCDATA)>
