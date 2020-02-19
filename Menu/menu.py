@@ -61,7 +61,7 @@ while status:
         option = int(input("Selecciona una opcion: "))
 
     if option == 1:
-        MyBaraja = ETree.parse("../FicherosXML/IETI_Card_Game.xml")
+        MyBaraja = ETree.parse("../FicherosXML/myBaraja.xml")
         print(ETree.tostring(MyBaraja.getroot()))
         if MyBaraja != None and barajaEnemigo == None:
             print("Baraja Cargada Correctamente")
@@ -130,7 +130,7 @@ while status:
         else:
             print("No hay cartas")
     elif option == 2:
-        barajaEnemigo = ETree.parse("../FicherosXML/IETI_Card_Game.xml")
+        barajaEnemigo = ETree.parse("../FicherosXML/Enemigo.xml")
         print(ETree.tostring(barajaEnemigo.getroot()))
         if barajaEnemigo != None and MyBaraja == None:
             print("Baraja Enemigo Cargada Correctamente")
