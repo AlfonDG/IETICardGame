@@ -1,27 +1,29 @@
 import xml.etree.ElementTree as arbol
 
-tree = arbol.parse("myBaraja.xml")
-root = tree.getroot()
-
+doc = arbol.parse("../FicherosXML/myBaraja.xml")
+element = doc.getroot()
+element.findall('deck/card/name')
+print(element)
 minataque=0
 numminataque=0
 baraja=[]
 for i in range (0,19):
-    name=root.tag("name")[i]
-    nombre=str(root.tag)
-    attack = root.tag("attack")[i]
-    ataque=int(root.tag)
-
- '''   if i<10:
-        baraja.append(nombre)
-        if ataque>minataque:
-            minataque=ataque
-            numminataque=i
+    name = str(element.tag)
+    attack = int(element.tag)
+    if i<10:
+        baraja.append(name)
+        baraja.append(attack)
+        if attack>minataque:
+            minataque = attack
+            numminataque = i
     elif i>10:
-        if ataque<minataque:
+        if attack<minataque:
             continue
-        elif ataque>=minataque:
-            baraja.append(nombre)
-            minataque=ataque
-            baraja.pop(3)
-print(baraja)'''
+        elif attack>=minataque:
+            baraja.append(name)
+            baraja.append(attack)
+            minataque = attack
+            baraja.pop(numminataque)
+            baraja.pop(numminataque)
+            numminataque = i
+print(baraja)
