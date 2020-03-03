@@ -24,7 +24,6 @@ for card in root.findall('deck/card'):
     carta.append(ataque)
     carta.append(defensa)
     baraja.append(carta)
-    print(ataque)
 baraja.sort(reverse=True)
 barajaordatt=sorted(baraja, key=lambda h: h[4])
 barajaordatt.reverse()
@@ -32,10 +31,3 @@ longitud=len(baraja)-1
 for i in range (0,10):
     barajaAtaque.append(barajaordatt[i])
 print(barajaAtaque)
-
-barajaorddef=sorted(baraja, key=lambda h: h[5])
-barajaorddef.reverse()
-longitud=len(baraja)-1
-for i in range (0,10):
-    barajaDefensa.append(barajaorddef[i])
-print(barajaDefensa)
